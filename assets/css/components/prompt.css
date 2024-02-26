@@ -1,6 +1,6 @@
 
 
-.prompt {
+.quizz {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -8,9 +8,9 @@
     padding-left: 10px;
 }
 
-#promptArea {
+.reponse {
     width: 100%;
-    height: 50vh;
+    height: 20vh;
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #ccc;
