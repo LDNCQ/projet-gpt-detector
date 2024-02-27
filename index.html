@@ -5,29 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/node_modules/normalize.css/normalize.css">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/components/prompt.css">
     <title>C0de Killer</title>
 </head>
 <body>
     <header></header>
     <main>
-        <section class="quizz">
-            <h1>Code killer</h1>
-            <p>question</p>
-            <textarea name="reponse1" id="reponse1" class="reponse" cols="30" rows="10" placeholder="Écrivez votre réponse ici"></textarea>
-            <p>question</p>
-            <textarea name="reponse2" id="reponse2" class="reponse" cols="30" rows="10" placeholder="Écrivez votre réponse ici"></textarea>
-            <p>question</p>
-            <textarea name="reponse3" id="reponse3" class="reponse" cols="30" rows="10" placeholder="Écrivez votre réponse ici"></textarea>
-            <p>question</p>
-            <textarea name="reponse4" id="reponse4" class="reponse" cols="30" rows="10" placeholder="Écrivez votre réponse ici"></textarea>
-            <p>question</p>
-            <textarea name="reponse5" id="reponse5" class="reponse" cols="30" rows="10" placeholder="Écrivez votre réponse ici"></textarea>
-            <button onclick="send()">tester</button>
-        </section>
-        
+        <h1>C0de Killer</h1>
+        <input type="text" id="prenom" name="prenom" required minlength="3" maxlength="38" size="10" placeholder="Prénom" />
+        <input type="text" id="nom" name="nom" required minlength="2" maxlength="92" size="10" placeholder="Nom"/>
+
+        <button id="quizButton" onclick="window.location.href = './Quiiz.html'">Quiiz</button>
+        <button id="questionButton" onclick="window.location.href = './grandquestion.html'">Grande question</button>
     </main>
     <footer></footer>
 </body>
-<script src="./assets/scripts/send.function.js"></script>
+<script src="./assets/scripts/validationNomPrenom.js"></script>
 </html>
