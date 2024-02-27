@@ -1,0 +1,23 @@
+const fetchData = async () => {
+    const url = 'https://api.gptzero.me/v2/predict/text';
+    const options = {
+        method: 'POST',
+        headers: {
+            'x-api-key': 'Un1c0rnM@g1cK3y',
+            'Content-Type': 'application/json',
+            Accept: 'application/json'
+        },
+        body: '{"document":"blablaediandjksqcnsdkvsdfnesukfnskjsdkjfndsjk"}'
+    };
+
+    try {
+        const response = await fetch(url, options);
+        const data = await response.json();
+        console.log(data);
+    } catch (error) {
+        console.error(error);
+    }
+};
+
+// Call the async function
+fetchData();
