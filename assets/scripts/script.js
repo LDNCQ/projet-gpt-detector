@@ -13,7 +13,7 @@ document.addEventListener("keydown", function(e) {
     }
     if (e.key === "F12") {
         console.log("F12 pressed");
-        // e.preventDefault();
+        e.preventDefault();
     }
 });     
 
