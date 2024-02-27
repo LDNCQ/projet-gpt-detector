@@ -11,17 +11,15 @@ document.addEventListener("visibilitychange", function() {
   });
   
 document.addEventListener("keydown", function(e) {
-    if (e.ctrlKey) {
-        navigator.clipboard.writeText("You shall not paste");
-        console.log("Ctrl pressed");
-    } else if ((e.ctrlKey || e.metaKey) && (e.key === "v" || e.key === "V")) {
+    if ((e.ctrlKey || e.metaKey) && (e.key === "v" || e.key === "V")) {
         console.log("Ctrl+V pressed");
+        navigator.clipboard.writeText("You shall not paste");
         boom.play();
 
-        tr.style.display = "block";
-        setTimeout(() => {
-            tr.style.display = "none";
-        }, 200);
+        // tr3.style.display = "block";
+        // setTimeout(() => {
+        //     tr3.style.display = "none";
+        // }, 200);
 
     } else if (e.key === "F12") {
         console.log("F12 pressed");
@@ -29,12 +27,12 @@ document.addEventListener("keydown", function(e) {
         // setTimeout(() => {
         //     tr2.style.display = "none";
         // }, 200);
-        e.preventDefault();
+        preventDefault();
     } else if ((e.ctrlKey || e.metaKey) && e.shiftKey && (e.key === "i" || e.key === "I" || e.key === "j" || e.key === "J")) {
         console.log("Ctrl+Shift+I pressed");
         e.preventDefault();
     } 
-    console.log(e.key);
+
 });     
   
   
