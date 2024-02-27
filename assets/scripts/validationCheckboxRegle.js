@@ -1,14 +1,15 @@
-function verifierCheckbox() {
+function verifierCheckboxPopUp() {
+
     const checkbox = document.getElementById('regleValider');
-    const submit = document.getElementById('submit');
+    const continuerPopUp = document.getElementById('continuerPopUp');
 
     if (checkbox.checked) {
-        submit.disabled = false;
+        continuerPopUp.disabled = false;
     } else {
-        submit.disabled = true;
+        continuerPopUp.disabled = true;
     }
-}
+};
 
-document.getElementById('regleValider').addEventListener('input', verifierCheckbox);
+document.getElementById('regleValider').addEventListener('input', verifierCheckboxPopUp);
 
-verifierCheckbox();
+verifierCheckboxPopUp()

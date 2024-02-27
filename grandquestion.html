@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/node_modules/normalize.css/normalize.css">
     <link rel="stylesheet" href="./assets/css/components/prompt.css">
+    <link rel="stylesheet" href="./assets/css/components/PopUp.css">
+
     <title>C0de Killer</title>
 </head>
 <body>
@@ -16,11 +18,27 @@
             <textarea name="reponse1" id="reponsequestion1" class="reponseGrandQuestion" cols="30" rows="30" placeholder="Écrivez votre réponse ici"></textarea>
             <button onclick="send()">Valider</button>
         </section>
+
+        <div class="popUP">
+            <div class="PopUpContent">
+                <h2>Les regles  du jeu :</h2>
+                <p>Vous avez 5 questions auxquelles répondre. Vous disposez de 5 minutes pour répondre à toutes les questions. Si vous ne répondez pas à toutes les questions dans le temps imparti, vous perdez. Si vous répondez à toutes les questions dans le temps imparti, vous gagnez.</p>
+                <p>Toute tentative de triche sera sanctionnée, vous avez été prévenu. <br>
+                Évitez tout raccourci suspect tel que copier-coller ou autre. <br>
+                </p>
+                <input type="checkbox" name="regle" id="regleValider">
+                <label for="regleValider">J'ai lu et j'accepte les règles du jeu</label><br>
+                <button onclick="validerRegles()" id="continuerPopUp">Continuer</button>
+            </div>
+            
+        </div>
     </main>
     <footer></footer>
 </body>
 <script src="./assets/scripts/send.function.js"></script>
 <!-- <script src="./assets/scripts/gptZero.js"></script> -->
 <script src="./assets/scripts/script.js"></script>
+<script src="./assets/scripts/popup.js"></script>
+
 
 </html>
