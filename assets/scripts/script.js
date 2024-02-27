@@ -29,11 +29,15 @@ document.addEventListener("keydown", function(e) {
 
     } else if (e.key === "F12") {
         console.log("F12 pressed");
+
+        e.preventDefault();
+
         // tr2.style.display = "block";
         // setTimeout(() => {
         //     tr2.style.display = "none";
         // }, 200);
         // e.preventDefault();
+
     }
 });     
 
