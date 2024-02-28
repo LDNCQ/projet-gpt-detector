@@ -1,9 +1,8 @@
 import express from 'express';
 import cors from 'cors';
 import path from 'path';
-import '../../index.html' from 'url';
-const app = express()
-const port = 3000
+const app = express();
+const port = 3000;
 
 app.get('/', (req, res) => {
   res.send('Hello World!')

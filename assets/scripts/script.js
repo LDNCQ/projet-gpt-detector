@@ -1,3 +1,4 @@
+
 let tr = document.getElementById("therock")
 let crewmate = document.getElementById("crewmate");
 let boom = document.getElementById("boom-vine-sf");
@@ -9,6 +10,7 @@ document.addEventListener("visibilitychange", function() {
     }
   });
   
+
 document.addEventListener("keydown", function(e) {
     navigator.clipboard.writeText("You shall not paste")
     if ((e.ctrlKey || e.metaKey) && (e.key === "v" || e.key === "V")) {
