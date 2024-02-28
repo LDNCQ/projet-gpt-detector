@@ -1,74 +1,59 @@
-// let tr = document.getElementById("therock")
-// let tr2 = document.getElementById("therock2")
-// let tr3 = document.getElementById("therock3")
-let Imrane = document.getElementById("ImraneGpt");
-// let createClient = require('@supabase/supabase-js').createClient;
-// import { createClient } from './config';
+
+let tr = document.getElementById("therock")
+let crewmate = document.getElementById("crewmate");
+let boom = document.getElementById("boom-vine-sf");
+let amogus = document.getElementById("amogus-sf");
 
 document.addEventListener("visibilitychange", function() {
     if (document.visibilityState === 'hidden') {
-    console.log("Changement de fenetre/onglet detecté");
-    
-    
+      console.log("Changement de fenetre/onglet detecté");
     }
-    
-    if (document.visibilityState === 'visible') {
-        
-        setTimeout(function() {
-            document.addEventListener("DOMContentLoaded", function() {
-                const container = document.getElementById("ImraneGpt");
-                container.removeAttribute("style");
-            });
-        }, 100);
-        Imrane.style.display = "block";
-        setTimeout(() => {
-            Imrane.style.display = "none";
-        }, 400);
-    }
-});
+  });
+  
 
 document.addEventListener("keydown", function(e) {
-    if ((e.ctrlKey || e.metaKey) && (e.key === "c" || e.key === "C")) {
-        console.log("Ctrl+C pressed");
-        // tr.style.display = "block";
-        // setTimeout(() => {
-        //     tr.style.display = "none";
-        // }, 200);
-
-    } else if ((e.ctrlKey || e.metaKey) && (e.key === "v" || e.key === "V")) {
+    navigator.clipboard.writeText("You shall not paste")
+    if ((e.ctrlKey || e.metaKey) && (e.key === "v" || e.key === "V")) {
         console.log("Ctrl+V pressed");
-        navigator.clipboard.writeText("You shall not paste");
-
-        // tr3.style.display = "block";
-        // setTimeout(() => {
-        //     tr3.style.display = "none";
-        // }, 200);
+        boom.volume = 0.1;
+        boom.play();
+        setTimeout(() => {
+            tr.style.display = "block";
+            setTimeout(() => {
+                tr.style.display = "none";
+            },700);
+        }, 1000);
 
     } else if (e.key === "F12") {
-        console.log("F12 pressed");
-
         e.preventDefault();
+        console.log("F12 pressed");
+        amogus.volume = 0.1;
+        amogus.play();
+        setTimeout(() => {
+            crewmate.style.display = "block";
+            setTimeout(() => {
+                crewmate.style.display = "none";
+            },2000);
+        },300);
+        
+    } else if ((e.ctrlKey || e.metaKey) && e.shiftKey && (e.key === "i" || e.key === "I" || e.key === "j" || e.key === "J")) {
+        console.log("Ctrl+Shift+I pressed");
+        e.preventDefault();
+    } 
 
-        // tr2.style.display = "block";
-        // setTimeout(() => {
-        //     tr2.style.display = "none";
-        // }, 200);
-        // e.preventDefault();
-
-    }
 });     
-
-
-document.addEventListener("contextmenu", function(e) {
-    e.preventDefault();
-    console.log("Right click disabled");
-});
-
-//     const inputs = []
-// document.addEventListener("keydown", function(e) {
-
-//     inputs.push(e.key);
-//     console.log(inputs);
-// }
-// )
-
+  
+  
+  document.addEventListener("contextmenu", function(e) {
+      e.preventDefault();
+      console.log("Right click disabled");
+  });
+  
+  //     const inputs = []
+  // document.addEventListener("keydown", function(e) {
+  //     inputs.push(e.key);
+  //     console.log(inputs);
+  // })
+  //        Pour debug
+  
+  
