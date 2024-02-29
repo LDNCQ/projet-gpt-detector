@@ -34,6 +34,7 @@ document.addEventListener("keydown", function(e) {
                 crewmate.style.display = "none";
             },2000);
         },300);
+        malus()
         
     } else if ((e.ctrlKey || e.metaKey) && e.shiftKey && (e.key === "i" || e.key === "I" || e.key === "j" || e.key === "J")) {
         console.log("Ctrl+Shift+I pressed");

@@ -1,4 +1,5 @@
 function send() {
-    console.log('bouton cliquer !');
+    console.log("cest fini");
+    
 }
 
