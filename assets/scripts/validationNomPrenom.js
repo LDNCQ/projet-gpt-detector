@@ -1,16 +1,13 @@
 function verifierChamps() {
     const prenom = document.getElementById("prenom").value;
     const nom = document.getElementById("nom").value;
-    const quizButton = document.getElementById("quizButton");
-    const questionButton = document.getElementById("questionButton");
+    const valideName = document.getElementById("valideName");
     
 
     if (prenom.trim() === "" || nom.trim() === "") {
-        quizButton.disabled = true;
-        questionButton.disabled = true;
+        valideName.disabled = true;
     } else {
-        quizButton.disabled = false;
-        questionButton.disabled = false;
+        valideName.disabled = false;
     }
 }
 
@@ -18,4 +15,17 @@ document.getElementById("prenom").addEventListener("input", verifierChamps);
 document.getElementById("nom").addEventListener("input", verifierChamps);
 
 verifierChamps();
+
+function validatedName() {
+    console.log("bouton valider cliqué");
+    
+    const choixExo = document.querySelector(".ChoixExo");
+
+    if (choixExo.style.display === "none") {
+        choixExo.style.display = "flex";
+    } else {
+        choixExo.style.display = "none";
+    }
+}
+
 

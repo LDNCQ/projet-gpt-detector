@@ -1,0 +1,59 @@
+.entryName {
+
+    background-color: #B6D6CC;
+    width: 502px;
+    height: 513px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 50px;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 35%;
+}
+
+#nom, #prenom {
+
+    width: 70%;
+    height: 50px;
+    /* margin-top: 20px; */
+    border: none;
+    font-size: 20px;
+    color: #000;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.entryName h1 {
+
+    margin: 0;
+}
+
+#valideName {
+    
+        width: 30%;
+        height: 50px;
+        background-color: #74A4BC;
+        border: none;
+        color: #000;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+}
+
+#valideName:hover {
+
+    border: #000 solid;
+}
+
+#valideName:disabled {
+
+    background-color: #74A4BC50;
+    cursor: not-allowed;
+}
+
+.entryName, #nom, #prenom, #valideName, .ChoixExo, #quizButton, #questionButton, #qcmButton{
+
+    border-radius: 10px;
+}

@@ -1,4 +1,3 @@
-
 let tr = document.getElementById("therock")
 let crewmate = document.getElementById("crewmate");
 let boom = document.getElementById("boom-vine-sf");
@@ -44,10 +43,10 @@ document.addEventListener("keydown", function(e) {
 });     
   
   
-  document.addEventListener("contextmenu", function(e) {
-      e.preventDefault();
-      console.log("Right click disabled");
-  });
+//   document.addEventListener("contextmenu", function(e) {
+//       e.preventDefault();
+//       console.log("Right click disabled");
+//   });
   
   //     const inputs = []
   // document.addEventListener("keydown", function(e) {
