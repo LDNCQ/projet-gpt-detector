@@ -5,9 +5,18 @@ const supabase = createClient(supabaseUrl, supabaseKey)
 
 
 async function getTableData() {
-    const { data, error } = await supabase
+    const {data, error} = await supabase
     .from('table-test')
     .select()
     return {data, error}
-    console.log(data, error)
+    
 }
+
+async function addTableData(data) {
+    const {date, error} = await supabase
+    .from('table-test')
+    .insert([data])
+    return {data, error}
+}
+
+export {getTableData, addTableData}
