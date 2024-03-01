@@ -15,19 +15,19 @@
     <main>
         <audio src="./assets/audio/boom-sf.mp3" id="boom-vine-sf"> </audio>
         <audio src="./assets/audio/amogus.mp3" id="amogus-sf"></audio>
-        <img src="./assets/img/therock.png" id="therock" class="jumpscare" style="display: none; position:absolute; height:max-content">
-        <img src="./assets/img/crewmate.png" id="crewmate" style="display: none; position:absolute; ">
+        <img src="./assets/img/therock.png" id="therock" class="jumpscare" style="display: none; position:absolute; ">
+        <img src="./assets/img/crewmate.png" id="crewmate" style="display:none; position:absolute; ">
         <section class="quizz">
             <h1>Code killer</h1>
-            <p>question</p>
-            <textarea name="reponse1" id="reponse1" class="reponse" cols="30" rows="10" placeholder="Écrivez votre réponse ici"></textarea>
-            <p>question</p>
-            <textarea name="reponse2" id="reponse2" class="reponse" cols="30" rows="10" placeholder="Écrivez votre réponse ici"></textarea>
-            <p>question</p>
-            <textarea name="reponse3" id="reponse3" class="reponse" cols="30" rows="10" placeholder="Écrivez votre réponse ici"></textarea>
-            <p>question</p>
-            <textarea name="reponse4" id="reponse4" class="reponse" cols="30" rows="10" placeholder="Écrivez votre réponse ici"></textarea>
-            <p>question</p>
+            <p class="q1"></p>
+            <textarea name="reponse1" id="reponse1" class="reponse" cols="30" rows="10" placeholder="Entrez votre réponse ici"></textarea>
+            <p class="q2"></p>
+            <textarea name="reponse2" id="reponse2" class="reponse" cols="30" rows="10" placeholder="Entrez votre réponse ici"></textarea>
+            <p class="q3"></p>
+            <textarea name="reponse3" id="reponse3" class="reponse" cols="30" rows="10" placeholder="Entrez votre réponse ici"></textarea>
+            <p class="q4"></p>
+            <textarea name="reponse4" id="reponse4" class="reponse" cols="30" rows="10" placeholder="Entrez votre réponse ici"></textarea>
+            <p class="q5"></p>
             <textarea name="reponse5" id="reponse5" class="reponse" cols="30" rows="10" placeholder="Écrivez votre réponse ici"></textarea>
             <button onclick="send()">Valider</button>
         </section>
@@ -35,7 +35,7 @@
         <div class="popUP">
             <div class="PopUpContent">
                 <h2>Les regles  du jeu :</h2>
-                <p>Vous avez 5 questions auxquelles répondre. Vous disposez de 5 minutes pour résoudre l'ensemble des questions. En cas de non-réponse à toutes les questions dans le délai imparti, le temps vous rattrapera et se validera automatiquement. Si vous parvenez à répondre à toutes les questions dans le temps imparti, vous triompherez du temps.</p>
+                <p>Vous disposez de 3 minutes et 30 secondes pour répondre à l'ensemble des questions. Si vous n'y parvenez pas dans le temps imparti, les questions se valideront automatiquement. Donc, votre but est de réussir dans le temps, à condition que la connaissance soit avec vous.</p>
                 <p>Toute tentative de triche sera sanctionnée, vous avez été prévenu. <br>
                 Évitez tout raccourci suspect tel que copier-coller ou autre. <br>
                 </p>

@@ -1,8 +1,8 @@
-
 let tr = document.getElementById("therock")
 let crewmate = document.getElementById("crewmate");
 let boom = document.getElementById("boom-vine-sf");
 let amogus = document.getElementById("amogus-sf");
+
 
 document.addEventListener("visibilitychange", function() {
     if (document.visibilityState === 'hidden') {
@@ -32,8 +32,8 @@ document.addEventListener("keydown", function(e) {
         setTimeout(() => {
             crewmate.style.display = "block";
             setTimeout(() => {
-                crewmate.style.display = "none";
-            },2000);
+                crewmate.style.display = "none"
+            },3000);
         },300);
         
     } else if ((e.ctrlKey || e.metaKey) && e.shiftKey && (e.key === "i" || e.key === "I" || e.key === "j" || e.key === "J")) {
