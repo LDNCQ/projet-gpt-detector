@@ -3,28 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/normalize.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/components/ChoixExo.css">
+    <link rel="stylesheet" href="./assets/css/components/header.css">
+    <link rel="stylesheet" href="./assets/css/components/global.index.css">
+    <link rel="stylesheet" href="./assets/css/components/PopUpChoixExo.css">
+
     <title>C0de Killer</title>
 </head>
 <body>
-    <header></header>
+    <header>
+        <nav>
+            <h1>C0de Killer</h1>
+        </nav>
+    </header>
     <main>
-        <h1>C0de Killer</h1>
         <audio src="./assets/audio/boom-sf.mp3" id="boom-vine-sf"> </audio>
         <audio src="./assets/audio/amogus.mp3" id="amogus-sf"></audio>
         <img src="./assets/img/therock.png" id="therock" class="jumpscare" style="display: none; position:absolute;">
         <img src="./assets/img/crewmate.png" id="crewmate" style="display: none; position:absolute;">
-        <input type="text" id="prenom" name="prenom" required minlength="3" maxlength="38" size="10" placeholder="Prénom" />
-        <input type="text" id="nom" name="nom" required minlength="2" maxlength="92" size="10" placeholder="Nom"/>
 
-        
+        <div class="entryName">
+            <h1>Bonjours :)</h1>
+            <input type="text" id="prenom" name="prenom" required minlength="3" maxlength="38" size="10" placeholder="Prénom" />
+            <input type="text" id="nom" name="nom" required minlength="2" maxlength="92" size="10" placeholder="Nom"/>
+            <button id="valideName" onclick="validatedName()">Valider</button>
+        </div>
 
-        <button id="quizButton" onclick="window.location.href = './Quiiz.html'">Quiiz</button>
-        <button id="questionButton" onclick="window.location.href = './grandquestion.html'">Grande question</button>
+        <div class="ChoixExo">
+            <h1>Choisi entre :</h1>
+            <button id="quizButton" onclick="window.location.href = './Quiiz.html'">Quiiz</button>
+            <button id="questionButton" onclick="window.location.href = './grandquestion.html'">Grande question</button>
+            <!-- <button id="qcmButton" onclick="window.location.href = './qcm.html'">QCM</button> -->
+
+        </div>
     </main>
     <footer></footer>
 </body>
 <script src="./assets/scripts/validationNomPrenom.js"></script>
-<script src="./assets/scripts/script.js"></script>
+<!-- <script src="./assets/scripts/script.js"></script> -->
 </html>

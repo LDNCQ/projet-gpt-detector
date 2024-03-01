@@ -1,17 +1,27 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
+<heawindow.requestAnimationFrame(dow.requestAnimationFrame(
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/normalize.css">
-    <link rel="stylesheet" href="./assets/css/components/prompt.css">
+    <!-- <link rel="stylesheet" href="./assets/css/components/prompt.css"> -->
     <link rel="stylesheet" href="./assets/css/components/PopUp.css">
     <link rel="stylesheet" href="./assets/css/components/imrane.css">
+    <link rel="stylesheet" href="./assets/css/components/header.css">
+    <link rel="stylesheet" href="./assets/css/components/quizz.css">
+
 
     <title>C0de Killer</title>
 </head>
 <body>
-    <header></header>
+    <header>
+        <nav>
+            <h1>C0de Killer</h1>
+        </nav>
+    </header>
     <main>
         <audio src="./assets/audio/boom-sf.mp3" id="boom-vine-sf"> </audio>
         <audio src="./assets/audio/amogus.mp3" id="amogus-sf"></audio>
@@ -28,8 +38,9 @@
             <p class="q4"></p>
             <textarea name="reponse4" id="reponse4" class="reponse" cols="30" rows="10" placeholder="Entrez votre réponse ici"></textarea>
             <p class="q5"></p>
+
             <textarea name="reponse5" id="reponse5" class="reponse" cols="30" rows="10" placeholder="Écrivez votre réponse ici"></textarea>
-            <button onclick="send()">Valider</button>
+            <button onclick="send(), stopTimer()" id="ValiderBtn">Valider</button>
         </section>
 
         <div class="popUP">
@@ -41,9 +52,13 @@
                 </p>
                 <input type="checkbox" name="regle" id="regleValider">
                 <label for="regleValider">J'ai lu et j'accepte les règles du jeu</label><br>
-                <button onclick="validerRegles()" id="continuerPopUp">Continuer</button>
+                <button onclick="validerRegles(), startTimer()" id="continuerPopUp">Continuer</button>
             </div>
             
+        </div>
+
+        <div id="timer">
+            03:50
         </div>
 
         <div id="ImraneGpt" style="display: none;">
@@ -56,6 +71,7 @@
 <script src="./assets/scripts/sendfunction.js"></script>
 <script src="./assets/scripts/script.js"></script>
 <script src="./assets/scripts/validationCheckboxRegle.js"></script>
-<script src="./assets/scripts/script.js"></script>
+<!-- <script src="./assets/scripts/script.js"></script> -->
 <script src="./assets/scripts/popup.js"></script>
+<script src="./assets/scripts/timer.js"></script>
 </html>

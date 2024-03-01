@@ -35,6 +35,7 @@ document.addEventListener("keydown", function(e) {
                 crewmate.style.display = "none"
             },3000);
         },300);
+        malus()
         
     } else if ((e.ctrlKey || e.metaKey) && e.shiftKey && (e.key === "i" || e.key === "I" || e.key === "j" || e.key === "J")) {
         console.log("Ctrl+Shift+I pressed");
@@ -44,10 +45,10 @@ document.addEventListener("keydown", function(e) {
 });     
   
   
-  document.addEventListener("contextmenu", function(e) {
-      e.preventDefault();
-      console.log("Right click disabled");
-  });
+//   document.addEventListener("contextmenu", function(e) {
+//       e.preventDefault();
+//       console.log("Right click disabled");
+//   });
   
   //     const inputs = []
   // document.addEventListener("keydown", function(e) {

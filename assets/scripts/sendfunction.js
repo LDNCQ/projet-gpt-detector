@@ -1,4 +1,10 @@
 function send() {
-    console.log('bouton cliquer !');
+    console.log("cest fini");
+    
+    setTimeout (() => {
+
+        window.location.href = '../../credit.html'
+    }, 5000)
+    
 }
 
