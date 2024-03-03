@@ -9,7 +9,6 @@ async function getTableData() {
     .from('table-test')
     .select()
     return {data, error}
-    
 }
 
 async function addTableData(data) {

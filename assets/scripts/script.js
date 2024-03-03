@@ -5,7 +5,7 @@ let amogus = document.getElementById("amogus-sf");
 
 document.addEventListener("visibilitychange", function() {
     if (document.visibilityState === 'hidden') {
-      console.log("Changement de fenetre/onglet detecté");
+      console.log("Changement de fenêtre/onglet détecté");
     }
   });
   

@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./assets/css/components/imrane.css">
     <link rel="stylesheet" href="./assets/css/components/header.css">
     <link rel="stylesheet" href="./assets/css/components/quizz.css">
+    <link rel="stylesheet" href="./assets/css/components/background.css">
 
 
     <title>C0de Killer</title>
@@ -29,19 +30,17 @@
         <img src="./assets/img/crewmate.png" id="crewmate" style="display: none; left:40%; height: 50vh; position:fixed; ">
 
         <section class="quizz">
-            <p>Quelle est la fonction principale d'un fichier Dockerfile dans le contexte de la conteneurisation?</p>
-            <textarea name="reponse1" id="reponse1" class="reponse" cols="30" rows="10" placeholder="Écrivez votre réponse ici"></textarea>
-            <hr>
-            <p>Comment définiriez-vous une variable d'environnement personnalisée lors de la construction d'une image Docker, et comment l'utiliseriez-vous dans le fichier Dockerfile?</p>
-            <textarea name="reponse2" id="reponse2" class="reponse" cols="30" rows="10" placeholder="Écrivez votre réponse ici"></textarea>
-            <hr>
-            <p>Écrivez une commande Dockerfile qui installe un package logiciel appelé "nginx" à partir des dépôts de packages officiels.</p>
-            <textarea name="reponse3" id="reponse3" class="reponse" cols="30" rows="10" placeholder="Écrivez votre réponse ici"></textarea>
-            <hr>
-            <p>Expliquez brièvement la différence entre les instructions "COPY" et "ADD" dans un fichier Dockerfile.            </p>
-            <textarea name="reponse4" id="reponse4" class="reponse" cols="30" rows="10" placeholder="Écrivez votre réponse ici"></textarea>
-            <hr>
-            <p>Donnez un exemple d'utilisation de l'instruction "ENV" dans un Dockerfile, en précisant son objectif.</p>
+            <h1>Code killer</h1>
+            <p class="q1"></p>
+            <textarea name="reponse1" id="reponse1" class="reponse" cols="30" rows="10" placeholder="Entrez votre réponse ici"></textarea>
+            <p class="q2"></p>
+            <textarea name="reponse2" id="reponse2" class="reponse" cols="30" rows="10" placeholder="Entrez votre réponse ici"></textarea>
+            <p class="q3"></p>
+            <textarea name="reponse3" id="reponse3" class="reponse" cols="30" rows="10" placeholder="Entrez votre réponse ici"></textarea>
+            <p class="q4"></p>
+            <textarea name="reponse4" id="reponse4" class="reponse" cols="30" rows="10" placeholder="Entrez votre réponse ici"></textarea>
+            <p class="q5"></p>
+
             <textarea name="reponse5" id="reponse5" class="reponse" cols="30" rows="10" placeholder="Écrivez votre réponse ici"></textarea>
             <button onclick="send(), stopTimer()" id="ValiderBtn">Valider</button>
         </section>
@@ -49,7 +48,7 @@
         <div class="popUP">
             <div class="PopUpContent">
                 <h2>Les regles  du jeu :</h2>
-                <p>Vous disposez de 3 minutes et 30 secondes pour répondre à l'ensemble des questions. Si vous n'y parvenez pas dans le temsp imparti, les questions se valideront automatiquement. Donc, votre but est de réussir dans le temps, à condition que la connaissance soit avec vous.</p>
+                <p>Vous disposez de 3 minutes et 30 secondes pour répondre à l'ensemble des questions. Si vous n'y parvenez pas dans le temps imparti, les questions se valideront automatiquement. Donc, votre but est de réussir dans le temps, à condition que la connaissance soit avec vous.</p>
                 <p>Toute tentative de triche sera sanctionnée, vous avez été prévenu. <br>
                 Évitez tout raccourci suspect tel que copier-coller ou autre. <br>
                 </p>
