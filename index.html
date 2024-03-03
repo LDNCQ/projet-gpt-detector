@@ -24,25 +24,24 @@
     <main>
         <audio src="./assets/audio/boom-sf.mp3" id="boom-vine-sf"> </audio>
         <audio src="./assets/audio/amogus.mp3" id="amogus-sf"></audio>
-        <img src="./assets/img/therock.png" id="therock" class="jumpscare" style="display: none; position:absolute; height:max-content">
-        <img src="./assets/img/crewmate.png" id="crewmate" style="display: none; position:absolute;">
+        <img src="./assets/img/therock.png" id="therock" style="display: none; left:40%; height: 50vh; position:fixed; ">
+        <img src="./assets/img/crewmate.png" id="crewmate" style="display: none; left:40%; height: 50vh; position:fixed; ">
 
         <div class="entryName">
-            <h1>Bonjours :)</h1>
+            <h1>Bonjour :)</h1>
             <input type="text" id="prenom" name="prenom" required minlength="3" maxlength="38" size="10" placeholder="Prénom" />
             <input type="text" id="nom" name="nom" required minlength="2" maxlength="92" size="10" placeholder="Nom"/>
-            <button id="valideName" onclick="validatedName()">Valider</button>
+            <button id="valideName" onclick="validatedName(); newSession()">Valider</button>
         </div>
 
         <div class="ChoixExo">
-            <h1>Choisi entre :</h1>
+            <h1>Choisissez entre :</h1>
             <button id="quizButton" onclick="window.location.href = './Quiiz.html'">Quiiz</button>
             <button id="questionButton" onclick="window.location.href = './grandquestion.html'">Grande question</button>
             <!-- <button id="qcmButton" onclick="window.location.href = './qcm.html'">QCM</button> -->
 
         </div>
     </main>
-    <footer></footer>
 </body>
 <script src="./assets/scripts/validationNomPrenom.js"></script>
 <script src="./assets/scripts/script.js"></script>

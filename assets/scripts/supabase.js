@@ -19,4 +19,6 @@ async function addTableData(data) {
     return {data, error}
 }
 
+
+
 export {getTableData, addTableData}

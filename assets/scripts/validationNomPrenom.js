@@ -18,14 +18,8 @@ verifierChamps();
 
 function validatedName() {
     console.log("bouton valider cliqué");
-    
     const choixExo = document.querySelector(".ChoixExo");
-
-    if (choixExo.style.display === "none") {
-        choixExo.style.display = "flex";
-    } else {
-        choixExo.style.display = "none";
-    }
+    choixExo.style.display = "flex";
 }
 
 
