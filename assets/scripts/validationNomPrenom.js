@@ -23,3 +23,18 @@ function validatedName() {
 }
 
 
+function envoyerDonnees() {
+    const prenom = document.getElementById("prenom").value;
+    const nom = document.getElementById("nom").value;
+
+    const donnees = {
+        nom: nom,
+        prenom : prenom
+    };
+
+    fetch('url', {
+        method: 'POST',
+        body: JSON.stringify(donnees),
+    })
+    .then(response => response.json())
+}
