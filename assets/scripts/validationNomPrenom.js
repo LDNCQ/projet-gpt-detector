@@ -24,17 +24,20 @@ function validatedName() {
 
 
 function envoyerDonnees() {
-    const prenom = document.getElementById("prenom").value;
-    const nom = document.getElementById("nom").value;
+    const prenom = document.getElementById('prenom').value;
+    const nom = document.getElementById('nom').value;
 
-    const donnees = {
-        nom: nom,
-        prenom : prenom
+    const postData = 
+    {
+        "nom" : nom,
+        "prenom" : prenom
     };
 
-    fetch('url', {
+    fetch('http://localhost:3000/api/v1/identity', {
         method: 'POST',
-        body: JSON.stringify(donnees),
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(postData)
     })
-    .then(response => response.json())
 }

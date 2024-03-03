@@ -32,7 +32,7 @@
             <h1>Bonjour :)</h1>
             <input type="text" id="prenom" name="prenom" required minlength="3" maxlength="38" size="10" placeholder="Prénom" />
             <input type="text" id="nom" name="nom" required minlength="2" maxlength="92" size="10" placeholder="Nom"/>
-            <button id="valideName" onclick="validatedName(), newSession(), envoyerDonnees()">Valider</button>
+            <button id="valideName" onclick="validatedName(), envoyerDonnees() ,newSession()">Valider</button>
         </div>
 
         <div class="ChoixExo">
@@ -44,6 +44,7 @@
         </div>
     </main>
 </body>
+<script src="./assets/scripts/supabase.js"></script>
 <script src="./assets/scripts/validationNomPrenom.js"></script>
 <!-- <script src="./assets/scripts/script.js"></script> -->
 </html>
