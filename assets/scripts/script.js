@@ -17,7 +17,7 @@ document.addEventListener("keydown", function(e) {
         boom.volume = 0.1;
         boom.play();
         setTimeout(() => {
-            tr.style.display = "block";
+            tr.style.display = "flex";
             setTimeout(() => {
                 tr.style.display = "none";
             },700);
@@ -29,7 +29,7 @@ document.addEventListener("keydown", function(e) {
         amogus.volume = 0.1;
         amogus.play();
         setTimeout(() => {
-            crewmate.style.display = "block";
+            crewmate.style.display = "flex";
             setTimeout(() => {
                 crewmate.style.display = "none";
             },2000);
@@ -56,4 +56,5 @@ document.addEventListener("keydown", function(e) {
   // })
   //        Pour debug
   
-  
+
+
