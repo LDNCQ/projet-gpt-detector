@@ -3,10 +3,9 @@ let crewmate = document.getElementById("crewmate");
 let boom = document.getElementById("boom-vine-sf");
 let amogus = document.getElementById("amogus-sf");
 
-
 document.addEventListener("visibilitychange", function() {
     if (document.visibilityState === 'hidden') {
-      console.log("Changement de fenetre/onglet detecté");
+      console.log("Changement de fenêtre/onglet détecté");
     }
   });
   
@@ -32,8 +31,8 @@ document.addEventListener("keydown", function(e) {
         setTimeout(() => {
             crewmate.style.display = "block";
             setTimeout(() => {
-                crewmate.style.display = "none"
-            },3000);
+                crewmate.style.display = "none";
+            },2000);
         },300);
         malus()
         
