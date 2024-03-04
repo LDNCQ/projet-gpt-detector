@@ -43,14 +43,20 @@ function malus() {
         send();
         return;
     }
-
+    
     if (seconds < 10) {
         seconds += 50;
         minutes--;
     } else {
         seconds -= 10;
     }
-
+    
     const formattedTime = padZero(minutes) + ":" + padZero(seconds);
     document.getElementById("timer").innerText = formattedTime;
 }
+
+
+
+
+
+
