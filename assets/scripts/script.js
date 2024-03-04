@@ -16,25 +16,19 @@ document.addEventListener("visibilitychange", function() {
 
 document.addEventListener("keydown", function(e) {
     if ((e.ctrlKey || e.metaKey) && (e.key === "v" || e.key === "V")) {
-<<<<<<< HEAD
+        e.preventDefault();
         amogus.volume = 0.1;
         amogus.play();
-=======
-        console.log("Ctrl+V pressed");
-        boom.volume = 0.1;
-        boom.play();
-        Colle++;
->>>>>>> 148bfe65a2cd2d68d0ff740f6b1b3e8631254ca2
         setTimeout(() => {
             crewmate.style.display = "flex";
             setTimeout(() => {
                 crewmate.style.display = "none";
             },2000);
         },300);
-
+        Colle++;
+        
     } else if (e.key === "F12") {
         e.preventDefault();
-        console.log("F12 pressed");
         amogus.volume = 0.1;
         amogus.play();
         F12++;
@@ -47,9 +41,16 @@ document.addEventListener("keydown", function(e) {
         malus()
         
     } else if ((e.ctrlKey || e.metaKey) && e.shiftKey && (e.key === "i" || e.key === "I" || e.key === "j" || e.key === "J")) {
-        console.log("Ctrl+Shift+I pressed");
+        amogus.volume = 0.1;
+        amogus.play();
+        Inspection++;
+        setTimeout(() => {
+            crewmate.style.display = "flex";
+            setTimeout(() => {
+                crewmate.style.display = "none";
+            },2000);
+        },300);
         e.preventDefault();
-        inspection++;
     } 
 
 });     
