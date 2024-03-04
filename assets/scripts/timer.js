@@ -8,6 +8,7 @@ function startTimer() {
 
 function stopTimer() {
     clearInterval(timer);
+    envoyerDonneesEvent();
 }
 
 

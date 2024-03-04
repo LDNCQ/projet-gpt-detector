@@ -39,6 +39,35 @@ async function addDataIdentity(info) {
     .select()
     return { data, error }
     
+
+        
 }
 
-export {addDataIdentity}
+async function addDataEvenements(info) {
+
+    const { data, error } = await supabase
+    .from('evenements')
+    .insert(info)
+    .select()
+    return { data, error }
+}
+
+// async function giveId() {
+
+
+//     const { data, error } = await supabase
+//     .from('etudiant')
+//     .select()
+//     .in('nom', [nom])
+//     .then(result => {
+//         const id = result.data[0].id;
+//         console.log(id)
+//     })
+//     return { data, error }
+// }
+
+
+
+
+
+export {addDataIdentity, addDataEvenements}

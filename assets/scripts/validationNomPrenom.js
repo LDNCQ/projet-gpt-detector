@@ -1,3 +1,4 @@
+
 function verifierChamps() {
     const prenom = document.getElementById("prenom").value;
     const nom = document.getElementById("nom").value;
@@ -23,16 +24,18 @@ function validatedName() {
 }
 
 
+
 function envoyerDonnees() {
     const prenom = document.getElementById('prenom').value;
     const nom = document.getElementById('nom').value;
 
     const postData = 
     {
-        "nom" : nom,
-        "prenom" : prenom
+        "nom": nom,
+        "prenom": prenom
     };
 
+    
     fetch('http://localhost:3000/api/v1/identity', {
         method: 'POST',
         headers: {
@@ -40,4 +43,6 @@ function envoyerDonnees() {
         },
         body: JSON.stringify(postData)
     })
+    
+
 }
