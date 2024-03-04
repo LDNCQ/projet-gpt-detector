@@ -41,4 +41,12 @@ async function addDataIdentity(info) {
     
 }
 
-export {addDataIdentity}
+async function ajoutReponses(rep) {
+    const { data, error } = await supabase
+    .from('reponses')
+    .insert(rep)
+    .select()
+    return { data, error }
+}
+
+export {addDataIdentity, ajoutReponses}

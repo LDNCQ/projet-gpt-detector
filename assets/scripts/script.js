@@ -1,6 +1,4 @@
-let tr = document.getElementById("therock")
 let crewmate = document.getElementById("crewmate");
-let boom = document.getElementById("boom-vine-sf");
 let amogus = document.getElementById("amogus-sf");
 
 document.addEventListener("visibilitychange", function() {
@@ -11,17 +9,15 @@ document.addEventListener("visibilitychange", function() {
   
 
 document.addEventListener("keydown", function(e) {
-    navigator.clipboard.writeText("You shall not paste")
     if ((e.ctrlKey || e.metaKey) && (e.key === "v" || e.key === "V")) {
-        console.log("Ctrl+V pressed");
-        boom.volume = 0.1;
-        boom.play();
+        amogus.volume = 0.1;
+        amogus.play();
         setTimeout(() => {
-            tr.style.display = "flex";
+            crewmate.style.display = "flex";
             setTimeout(() => {
-                tr.style.display = "none";
-            },700);
-        }, 1000);
+                crewmate.style.display = "none";
+            },2000);
+        },300);
 
     } else if (e.key === "F12") {
         e.preventDefault();

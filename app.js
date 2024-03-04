@@ -1,6 +1,6 @@
 import express from 'express'
 import cors from 'cors'
-import {addDataIdentity} from './assets/scripts/supabase.js'
+import {addDataIdentity, ajoutReponses} from './assets/scripts/supabase.js'
 const app = express()
 const port = 3000
 import path from 'path';
@@ -22,6 +22,13 @@ app.post('/api/v1/identity', async (req, res) => {
   // res.send(req.body)
   res.json(data)
 })
+
+app.post('/api/v1/reponses', async (req, res) => {
+  const {data, error} = await ajoutReponses(req.body)
+  // res.send(req.body)
+  res.json(data)
+})
+
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
