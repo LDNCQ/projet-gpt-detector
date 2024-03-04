@@ -1,17 +1,30 @@
 let crewmate = document.getElementById("crewmate");
 let amogus = document.getElementById("amogus-sf");
 
+
+let Colle = 0;
+let F12 = 0;
+let inspection = 0;
+let ChangementFenetre = 0;
 document.addEventListener("visibilitychange", function() {
     if (document.visibilityState === 'hidden') {
       console.log("Changement de fenêtre/onglet détecté");
+      ChangementFenetre++;
     }
   });
   
 
 document.addEventListener("keydown", function(e) {
     if ((e.ctrlKey || e.metaKey) && (e.key === "v" || e.key === "V")) {
+<<<<<<< HEAD
         amogus.volume = 0.1;
         amogus.play();
+=======
+        console.log("Ctrl+V pressed");
+        boom.volume = 0.1;
+        boom.play();
+        Colle++;
+>>>>>>> 148bfe65a2cd2d68d0ff740f6b1b3e8631254ca2
         setTimeout(() => {
             crewmate.style.display = "flex";
             setTimeout(() => {
@@ -24,6 +37,7 @@ document.addEventListener("keydown", function(e) {
         console.log("F12 pressed");
         amogus.volume = 0.1;
         amogus.play();
+        F12++;
         setTimeout(() => {
             crewmate.style.display = "flex";
             setTimeout(() => {
@@ -35,6 +49,7 @@ document.addEventListener("keydown", function(e) {
     } else if ((e.ctrlKey || e.metaKey) && e.shiftKey && (e.key === "i" || e.key === "I" || e.key === "j" || e.key === "J")) {
         console.log("Ctrl+Shift+I pressed");
         e.preventDefault();
+        inspection++;
     } 
 
 });     
@@ -53,4 +68,27 @@ document.addEventListener("keydown", function(e) {
   //        Pour debug
   
 
+
+
+
+
+function envoyerDonneesEvent() {
+
+    const postData = 
+    {
+        // "id": id,
+        "Colle" : Colle,
+        "F12" : F12,
+        "Inspection" : inspection,
+        "ChangementFenetre" : ChangementFenetre
+    };
+
+    fetch('http://localhost:3000/api/v1/evenements', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(postData)
+    })
+}
 

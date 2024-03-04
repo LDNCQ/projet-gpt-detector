@@ -1,6 +1,6 @@
 import express from 'express'
 import cors from 'cors'
-import {addDataIdentity, ajoutReponses} from './assets/scripts/supabase.js'
+import {addDataIdentity, addDataEvenements} from './assets/scripts/supabase.js'
 const app = express()
 const port = 3000
 import path from 'path';
@@ -26,6 +26,10 @@ app.post('/api/v1/identity', async (req, res) => {
 app.post('/api/v1/reponses', async (req, res) => {
   const {data, error} = await ajoutReponses(req.body)
   // res.send(req.body)
+})
+
+app.post('/api/v1/evenements', async (req, res) => {
+  const {data, error} = await addDataEvenements(req.body)
   res.json(data)
 })
 
